@@ -18,11 +18,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * |-----------------------------------------------------------|
    * |Tab  |  Q|  W|  E|  R|  T|  Y|  U|  I|  O|  P|  [|  ]|  \  |
    * |-----------------------------------------------------------|
-   * |CAPS   |  A|  S|  D|  F|  G|  H|  J|  K|  L|  ;|  '|Return |
+   * |Fn     |  A|  S|  D|  F|  G|  H|  J|  K|  L|  ;|  '|Return |
    * |-----------------------------------------------------------|
    * |Shift   |  Z|  X|  C|  V|  B|  N|  M|  ,|  .|  /|Shift     |
    * |-----------------------------------------------------------|
-   * |Ctrl|Gui |Alt |      Space            |Alt |Gui |FN  |Ctrl |
+   * |Ctrl|Gui |Alt |      Space            |Alt |Fn  |Gui |Ctrl |
    * `-----------------------------------------------------------'
    */
 [_BL] = KEYMAP_ANSI(
@@ -36,20 +36,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * ,-----------------------------------------------------------.
    * | ~ | F1|F2 |F3 |F4 |F5 |F6 |F7 |F8 |F9 |F10|F11|F12|  DEL  |
    * |-----------------------------------------------------------|
-   * |     | Up|  |  |  |  |Cal|   |Ins|   |PrSc|Sclk|Paus|      |
+   * |     |  |  |End|  |  |Cal|PgUp|Ins|PgDn|PrSc|Sclk|Paus|    |
    * |-----------------------------------------------------------|
-   * |      |Left|Down|Rig|  |  |  |  |   |   |Home|PgUp|        |
+   * |      |Home|    |   |  |  |Left|Dwn|Up|Rig|PgUp| `  |      |
    * |-----------------------------------------------------------|
-   * |        |   |App|  |  |   |Vdn|Vup|Mute|End|PgDn|          |
+   * |        |   |   |  |  |   |Vdn|Vup|Mute|PgDn|   |          |
    * |-----------------------------------------------------------|
-   * |    |    |    |                        |    |    |    |    |
+   * |    |    |    |                        |    |Fn  |    |    |
    * `-----------------------------------------------------------'
    */
 [_FL] = KEYMAP_ANSI(
   KC_GRV,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,    KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  KC_DEL,  \
-  KC_TRNS, KC_TRNS, KC_UP,   KC_TRNS, KC_TRNS, KC_TRNS, KC_CALC, KC_PGUP,  KC_INS,  KC_PGDN, KC_PSCR, KC_SLCK, KC_PAUS, KC_TRNS, \
-  KC_TRNS, KC_LEFT, KC_DOWN, KC_RGHT, KC_TRNS, KC_TRNS, KC_LEFT, KC_DOWN,  KC_UP,   KC_RGHT, KC_HOME, KC_GRV,           KC_TRNS, \
-  KC_TRNS, KC_TRNS, KC_APP,  KC_TRNS, KC_TRNS, KC_TRNS, KC_VOLD, KC_VOLU,  KC_MUTE, KC_END,  KC_PGDN,                   KC_TRNS, \
+  KC_TRNS, KC_TRNS, KC_TRNS, KC_END,  KC_TRNS, KC_TRNS, KC_CALC, KC_HOME,  KC_INS,  KC_END,  KC_PSCR, KC_SLCK, KC_PAUS, KC_TRNS, \
+  KC_TRNS, KC_HOME, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_LEFT, KC_DOWN,  KC_UP,   KC_RGHT, KC_PGUP, KC_GRV,           KC_TRNS, \
+  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_VOLD, KC_VOLU,  KC_MUTE, KC_PGDN, KC_TRNS,                   KC_TRNS, \
   KC_TRNS, KC_TRNS, KC_TRNS,                            KC_TRNS,                             KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS),
   
   /* Keymap _RL: Function Layer
