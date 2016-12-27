@@ -42,7 +42,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * |-----------------------------------------------------------|
    * |        |   |   | ç|  |   |Vdn|Vup|Mute|PgDn|   |          |
    * |-----------------------------------------------------------|
-   * |    |    |    |                        |    |Fn  |    |    |
+   * |    |    |    |                        |    |Fn  |    |_RL |
    * `-----------------------------------------------------------'
    */
 [_FL] = KEYMAP_ANSI(
@@ -50,7 +50,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_TRNS,KC_TRNS, KC_TRNS, M(0),  KC_TRNS, KC_TRNS, KC_CALC, KC_HOME,  KC_INS,  KC_END,  KC_PSCR, KC_SLCK, KC_PAUS, KC_TRNS, \
   KC_TRNS, M(1), KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_LEFT, KC_DOWN,  KC_UP,   KC_RGHT, KC_PGUP, KC_GRV,           KC_TRNS, \
   KC_TRNS, KC_TRNS, KC_TRNS, RALT(KC_COMM), KC_TRNS, KC_TRNS, KC_VOLD, KC_VOLU,  KC_MUTE, KC_PGDN, KC_TRNS,                   KC_TRNS, \
-  KC_TRNS, KC_TRNS, KC_TRNS,                            KC_TRNS,                             KC_TRNS, KC_TRNS, KC_TRNS, OSL(_RL)),
+  KC_TRNS, KC_TRNS, KC_TRNS,                            KC_BTN3,                             KC_TRNS, KC_TRNS, KC_TRNS, OSL(_RL)),
   
   /* Keymap _RL: Function Layer
    * ,-----------------------------------------------------------.
