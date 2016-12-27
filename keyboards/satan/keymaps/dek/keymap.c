@@ -28,29 +28,29 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_BL] = KEYMAP_ANSI(
   F(0),    KC_1,    KC_2,    KC_3,   KC_4,    KC_5,    KC_6,    KC_7,     KC_8,    KC_9,   KC_0,    KC_MINS, KC_EQL,  KC_BSPC, \
   KC_TAB,  KC_Q,    KC_W,    KC_E,   KC_R,    KC_T,    KC_Y,    KC_U,     KC_I,    KC_O,   KC_P,    KC_LBRC, KC_RBRC, KC_BSLS, \
-  MO(_FL), KC_A,    KC_S,    KC_D,   KC_F,    KC_G,    KC_H,    KC_J,     KC_K,    KC_L,   KC_SCLN, KC_QUOT,          KC_ENT,  \
-  KC_LSFT, KC_Z,    KC_X,    KC_C,   KC_V,    KC_B,    KC_N,    KC_M,     KC_COMM, KC_DOT, KC_SLSH,                   KC_RSFT, \
-  KC_LCTL, KC_LGUI, KC_LALT,                           KC_SPC,                             KC_RALT, MO(_FL), KC_RGUI, KC_RCTL),
+  MO(_FL), KC_A,    KC_S,    KC_D,   KC_F,    KC_G,    KC_H,    KC_J,     KC_K,    KC_L,   KC_SCLN, KC_QUOT,           KC_ENT,  \
+  OSM(MOD_LSFT), KC_Z,    KC_X,    KC_C,   KC_V,    KC_B,    KC_N,    KC_M,     KC_COMM, KC_DOT, KC_SLSH,       OSM(MOD_RSFT), \
+  KC_LCTL, KC_LGUI, KC_LALT,                           KC_SPC,                            KC_RALT, MO(_FL), KC_RGUI, KC_RCTL),
 
 /* Keymap _FL: Function Layer
    * ,-----------------------------------------------------------.
    * | ~ | F1|F2 |F3 |F4 |F5 |F6 |F7 |F8 |F9 |F10|F11|F12|  DEL  |
    * |-----------------------------------------------------------|
-   * |     |  |  |End|  |  |Cal|Home|Ins|End |PrSc|Sclk|Paus|    |
+   * |     |  |  | è |  |  |Cal|Home|Ins|End |PrSc|Sclk|Paus|    |
    * |-----------------------------------------------------------|
-   * |      |Home|    |   |  |  |Left|Dwn|Up|Rig|PgUp| `  |      |
+   * |      | à  |    |   |  |  |Left|Dwn|Up|Rig|PgUp| `  |      |
    * |-----------------------------------------------------------|
-   * |        |   |   |  |  |   |Vdn|Vup|Mute|PgDn|   |          |
+   * |        |   |   | ç|  |   |Vdn|Vup|Mute|PgDn|   |          |
    * |-----------------------------------------------------------|
    * |    |    |    |                        |    |Fn  |    |    |
    * `-----------------------------------------------------------'
    */
 [_FL] = KEYMAP_ANSI(
-  KC_GRV,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,    KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  KC_DEL,  \
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_END,  KC_TRNS, KC_TRNS, KC_CALC, KC_HOME,  KC_INS,  KC_END,  KC_PSCR, KC_SLCK, KC_PAUS, KC_TRNS, \
-  KC_TRNS, KC_HOME, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_LEFT, KC_DOWN,  KC_UP,   KC_RGHT, KC_PGUP, KC_GRV,           KC_TRNS, \
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_VOLD, KC_VOLU,  KC_MUTE, KC_PGDN, KC_TRNS,                   KC_TRNS, \
-  KC_TRNS, KC_TRNS, KC_TRNS,                            KC_TRNS,                             KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS),
+  KC_TRNS,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,    KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  KC_DEL,  \
+  KC_TRNS,KC_TRNS, KC_TRNS, M(0),  KC_TRNS, KC_TRNS, KC_CALC, KC_HOME,  KC_INS,  KC_END,  KC_PSCR, KC_SLCK, KC_PAUS, KC_TRNS, \
+  KC_TRNS, M(1), KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_LEFT, KC_DOWN,  KC_UP,   KC_RGHT, KC_PGUP, KC_GRV,           KC_TRNS, \
+  KC_TRNS, KC_TRNS, KC_TRNS, RALT(KC_COMM), KC_TRNS, KC_TRNS, KC_VOLD, KC_VOLU,  KC_MUTE, KC_PGDN, KC_TRNS,                   KC_TRNS, \
+  KC_TRNS, KC_TRNS, KC_TRNS,                            KC_TRNS,                             KC_TRNS, KC_TRNS, KC_TRNS, OSL(_RL)),
   
   /* Keymap _RL: Function Layer
    * ,-----------------------------------------------------------.
@@ -68,13 +68,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_RL] = KEYMAP_ANSI(
   #ifdef RGBLIGHT_ENABLE
   KC_GRV,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, RESET,   \
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, BL_DEC,  BL_INC,  BL_TOGG, \
+  KC_TRNS, KC_B, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, BL_DEC,  BL_INC,  BL_TOGG, \
   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          KC_TRNS, \
   KC_TRNS, RGB_TOG, RGB_MOD, RGB_HUI, RGB_HUD, RGB_SAI, RGB_SAD, RGB_VAI, RGB_VAD, KC_TRNS, KC_TRNS,                   KC_TRNS, \
   KC_TRNS, KC_TRNS, KC_TRNS,                            KC_TRNS,                            KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS),
   #else
   KC_GRV,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, RESET,   \
-  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, BL_DEC,  BL_INC,  BL_TOGG, \
+  KC_TRNS, KC_B, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, BL_DEC,  BL_INC,  BL_TOGG, \
   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          KC_TRNS, \
   KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,                   KC_TRNS, \
   KC_TRNS, KC_TRNS, KC_TRNS,                            KC_TRNS,                            KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS),
@@ -84,6 +84,29 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 enum function_id {
     SHIFT_ESC,
 };
+
+/*
+ * Macro definition
+ */
+const macro_t *action_get_macro(keyrecord_t *record, uint8_t id, uint8_t opt)
+{
+    keyevent_t event = record->event;
+    //uint8_t tap_count = record->tap_count;
+
+    switch (id) {
+        /* è */
+        case 0:
+            return (event.pressed ?
+                    MACRO( T(GRV), T(E), END ) :
+                    MACRO( END ) );
+        /* à */
+        case 1:
+            return (event.pressed ?
+                    MACRO( T(GRV), T(A), END ) :
+                    MACRO( END ) );
+    }
+    return MACRO_NONE;
+}
 
 const uint16_t PROGMEM fn_actions[] = {
   [0]  = ACTION_FUNCTION(SHIFT_ESC),
@@ -114,3 +137,4 @@ void action_function(keyrecord_t *record, uint8_t id, uint8_t opt) {
       break;
   }
 }
+
