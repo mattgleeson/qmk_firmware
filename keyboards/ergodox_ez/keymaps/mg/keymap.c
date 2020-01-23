@@ -32,14 +32,23 @@ enum custom_keycodes {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_ergodox_pretty(
-    KC_EQUAL,       KC_1,           KC_2,           KC_3,           KC_4,           KC_5,           KC_ESCAPE,                                      KC_ENTER,       KC_6,           KC_7,           KC_8,           KC_9,           KC_0,           KC_MINUS,
-    KC_TAB,         KC_Q,           KC_W,           KC_E,           KC_R,           KC_T,           KC_AUDIO_VOL_UP,                                KC_MEDIA_PLAY_PAUSE,        KC_Y,           KC_U,           KC_I,           KC_O,           KC_P,           KC_BSLASH,
-    KC_LCTRL,       LT(2,KC_A),     LGUI_T(KC_S),   LALT_T(KC_D),   LCTL_T(KC_F),   LSFT_T(KC_G),                                                                   RSFT_T(KC_H),   RCTL_T(KC_J),   RALT_T(KC_K),   RGUI_T(KC_L),   LT(1,KC_SCOLON),KC_QUOTE,
-    OSM(MOD_LSFT),  KC_Z,           KC_X,           KC_C,           KC_V,           KC_B,           KC_AUDIO_VOL_DOWN,                              KC_MEDIA_NEXT_TRACK, KC_N,           KC_M,           KC_COMMA,       KC_DOT,         KC_SLASH,       OSM(MOD_LSFT),
-    LT(1,KC_GRAVE), KC_QUOTE,       KC_TRANSPARENT, KC_LEFT,        KC_RIGHT,                                                                                                       KC_UP,          KC_DOWN,        KC_LBRACKET,    KC_RBRACKET,    RESET,
-                                                                                                    KC_AUDIO_VOL_DOWN,KC_AUDIO_VOL_UP,KC_MEDIA_PLAY_PAUSE,KC_MEDIA_NEXT_TRACK,
-                                                                                                                    KC_HOME,        KC_PGUP,
-                                                                                    KC_TAB,         KC_ENTER,       KC_END,         KC_PGDOWN,      KC_BSPACE,      KC_SPACE
+    KC_EQUAL,       KC_1,           KC_2,           KC_3,           KC_4,           KC_5,
+    KC_ESCAPE,                                      KC_ENTER,
+    KC_6,           KC_7,           KC_8,           KC_9,           KC_0,           KC_MINUS,
+    KC_TAB,         KC_Q,           KC_W,           KC_E,           KC_R,           KC_T,
+    KC_HOME,                                KC_PGUP,
+    KC_Y,           KC_U,           KC_I,           KC_O,           KC_P,           KC_BSLASH,
+    KC_LCTRL,       LT(2,KC_A),     LGUI_T(KC_S),   LALT_T(KC_D),   LCTL_T(KC_F),   LSFT_T(KC_G),
+    RSFT_T(KC_H),   RCTL_T(KC_J),   RALT_T(KC_K),   RGUI_T(KC_L),   LT(1,KC_SCOLON),KC_QUOTE,
+    OSM(MOD_LSFT),  KC_Z,           KC_X,           KC_C,           KC_V,           KC_B,
+    KC_END,                              KC_PGDOWN,
+    KC_N,           KC_M,           KC_COMMA,       KC_DOT,         KC_SLASH,       OSM(MOD_LSFT),
+    LT(1,KC_GRAVE), KC_QUOTE,       KC_TRANSPARENT, KC_LEFT,        KC_RIGHT,
+    KC_UP,          KC_DOWN,        KC_LBRACKET,    KC_RBRACKET,    RESET,
+    KC_AUDIO_VOL_DOWN,KC_AUDIO_VOL_UP,
+    KC_MEDIA_PLAY_PAUSE,KC_MEDIA_NEXT_TRACK,
+    KC_HOME,        KC_PGUP,
+    KC_TAB,         KC_ENTER,       KC_END,         KC_PGDOWN,      KC_BSPACE,      KC_SPACE
   ),
   [1] = LAYOUT_ergodox_pretty(
     KC_ESCAPE,      KC_F1,          KC_F2,          KC_F3,          KC_F4,          KC_F5,          KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_F6,          KC_F7,          KC_F8,          KC_F9,          KC_F10,         KC_F11,
