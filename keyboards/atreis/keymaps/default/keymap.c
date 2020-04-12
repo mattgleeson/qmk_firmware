@@ -41,17 +41,25 @@ enum custom_keycodes {
 #define KC_R_VD RGB_VAD
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-[_QWERTY] = LAYOUT_kc(
-  //,----+----+----+----+----+----.              ,----+----+----+----+----+----.
-     EQL,  1  , 2  , 3  , 4  , 5  ,                6  , 7  , 8  , 9  , 0  ,MINS,
-  //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-     TAB , Q  , W  , E  , R  , T  ,                Y  , U  , I  , O  , P  ,BSLS,
-  //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-    LCTRL, A  , S  , D  , F  , G  ,                H  , J  , K  , L  ,SCLN,QUOT,
-  //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
-      ESC, Z  , X  , C  , V  , B  ,TAB,      BSPC, N  , M  ,COMM,DOT ,SLSH,RALT,
+[_QWERTY] = LAYOUT(
+    /* LH R1 */
+    KC_EQL, KC_1, KC_2, KC_3, KC_4, KC_5,
+    /* RH R1 */
+    KC_6, KC_7, KC_8, KC_9, KC_0, KC_MINUS,
+    /* LH R2 */
+    KC_TAB, KC_Q, KC_W, KC_E, KC_R, KC_T,
+    /* RH R2 */
+    KC_Y, KC_U, KC_I, KC_O, KC_P, KC_BSLASH,
+    /* LH R3 (Home) */
+    KC_LCTRL, LT(2,KC_A), LGUI_T(KC_S), LALT_T(KC_D), LCTL_T(KC_F), LSFT_T(KC_G),
+    /* RH R3 (Home) */
+    RSFT_T(KC_H), RCTL_T(KC_J), RALT_T(KC_K), RGUI_T(KC_L), LT(1,KC_SCLN), KC_QUOTE,
+    /* LH R4 */
+    KC_LSFT, KC_Z, KC_X, KC_C, KC_V, KC_B, KC_TAB,
+    /* KC R4 */
+    KC_BSPC, KC_N, KC_M, KC_COMMA, KC_DOT, KC_SLASH, KC_RSFT,
   //`----+----+----+--+-+----+----+----/    \----+----+----+----+----+----+----'
-                         FN,LSFT,ENT ,         SPC ,RSFT, ESC
+                   FN,KC_LSFT,KC_ENT,         KC_SPC,KC_RSFT,KC_ESC
   //                  `----+----+----'        `----+----+----'
   ),
   [_FN] = LAYOUT_kc(
