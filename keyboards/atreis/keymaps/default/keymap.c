@@ -43,15 +43,15 @@ enum custom_keycodes {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_QWERTY] = LAYOUT_kc(
   //,----+----+----+----+----+----.              ,----+----+----+----+----+----.
-     GRV,  1  , 2  , 3  , 4  , 5  ,                6  , 7  , 8  , 9  , 0  ,MINS,
+     EQL,  1  , 2  , 3  , 4  , 5  ,                6  , 7  , 8  , 9  , 0  ,MINS,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-     EQL , Q  , W  , E  , R  , T  ,                Y  , U  , I  , O  , P  ,BSLS,
+     TAB , Q  , W  , E  , R  , T  ,                Y  , U  , I  , O  , P  ,BSLS,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
     LCTRL, A  , S  , D  , F  , G  ,                H  , J  , K  , L  ,SCLN,QUOT,
   //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
-     LSFT, Z  , X  , C  , V  , B  ,ENT,      BSPC, N  , M  ,COMM,DOT ,SLSH,RSFT,
+      ESC, Z  , X  , C  , V  , B  ,TAB,      BSPC, N  , M  ,COMM,DOT ,SLSH,RALT,
   //`----+----+----+--+-+----+----+----/    \----+----+----+----+----+----+----'
-                         FN,LSFT,TAB ,         SPC ,RSFT, RST
+                         FN,LSFT,ENT ,         SPC ,RSFT, ESC
   //                  `----+----+----'        `----+----+----'
   ),
   [_FN] = LAYOUT_kc(
