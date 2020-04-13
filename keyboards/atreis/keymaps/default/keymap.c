@@ -55,12 +55,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* RH R3 (Home) */
     RSFT_T(KC_H), RCTL_T(KC_J), RALT_T(KC_K), RGUI_T(KC_L), LT(1,KC_SCLN), KC_QUOTE,
     /* LH R4 */
-    KC_LSFT, KC_Z, KC_X, KC_C, KC_V, KC_B, KC_TAB,
+    KC_LSFT, KC_Z, KC_X, KC_C, KC_V, KC_B,
     /* KC R4 */
-    KC_BSPC, KC_N, KC_M, KC_COMMA, KC_DOT, KC_SLASH, KC_RSFT,
-  //`----+----+----+--+-+----+----+----/    \----+----+----+----+----+----+----'
-                   FN,KC_LSFT,KC_ENT,         KC_SPC,KC_RSFT,KC_ESC
-  //                  `----+----+----'        `----+----+----'
+    KC_N, KC_M, KC_COMMA, KC_DOT, KC_SLASH, KC_RSFT,
+    /* thumbs */
+    FN, KC_LSFT, KC_ENT, KC_TAB,
+    KC_BSPC,KC_SPC,KC_RSFT,KC_ESC
   ),
   [_FN] = LAYOUT_kc(
   //,----+----+----+----+----+----.              ,----+----+----+----+----+----.
@@ -70,9 +70,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
      R_TG,R_MO,R_HI,R_SI,R_VI,    ,               LEFT,DOWN, UP ,RGHT,    ,    ,
   //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
-     BL_T,BL_S,R_HD,R_SD,R_VD,LCBR,    ,         ,RCBR,PGDN,PGUP,LCBR,RCBR,PIPE,
+     BL_T,BL_S,R_HD,R_SD,R_VD,LCBR,               RCBR,PGDN,PGUP,LCBR,RCBR,PIPE,
   //`----+----+----+--+-+----+----+----/    \----+----+----+----+----+----+----'
-                           ,    ,    ,             ,    ,    
+                    ,    ,    ,     ,         ,            ,    ,
   //                  `----+----+----'        `----+----+----'
   )
 
