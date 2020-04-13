@@ -17,7 +17,7 @@
 #include "eeconfig.h"
 
 #define _QWERTY 0
-#define _FN 1
+#define _FN 3
 
 enum custom_keycodes {
   QWERTY = SAFE_RANGE,
@@ -25,6 +25,7 @@ enum custom_keycodes {
 };
 
 #define KC_ KC_TRNS
+#define KC__ KC_TRNS
 #define _______ KC_TRNS
 
 #define KC_FN FN
@@ -74,7 +75,35 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //`----+----+----+--+-+----+----+----/    \----+----+----+----+----+----+----'
                     ,    ,    ,     ,         ,            ,    ,
   //                  `----+----+----'        `----+----+----'
-  )
+  ),
+  [1] = LAYOUT_kc(
+    /* R1 */
+    ESC, F1,   F2, F3,   F4,   F5,      F6, F7, F8, F9, F10,  F11,
+    /* R2 */
+    _  , EXLM, AT, LCBR, RCBR, PIPE,    UP, 7,  8,  9,  ASTR, F12,
+    /* R3 (Home) */
+    _, _, DLR, LPRN, RPRN, GRAVE,       DOWN, 4, 5, 6, _, _,
+    /* LH R4 */
+    _, PERCENT, CIRCUMFLEX, LBRACKET, RBRACKET, TILD,
+    /* RH R4 */
+                                        AMPR, 1, 2, 3, BSLASH, _,
+    /* thumbs */
+    _, _, _, _,    _, _, _, _
+  ),
+  [2] = LAYOUT_kc(
+    /* R1 */
+    _, _, _, _, _, _,        _, _, _, _, _, _,
+    /* R2 */
+    _, _, _, MS_UP, _, _,    _, _, _, _, _, _,
+    /* R3 */
+    _, _, MS_LEFT, MS_DOWN, MS_RIGHT, _,
+    LEFT, DOWN, UP, RIGHT, _, MEDIA_PLAY_PAUSE,
+    /* R4 */
+    _, _, _, _, _, _,
+    _, _, MEDIA_PREV_TRACK, MEDIA_NEXT_TRACK, _, _,
+    /* thumbs */
+    _, _, _, _,    _, _, _, _
+  ),
 
 };
 
