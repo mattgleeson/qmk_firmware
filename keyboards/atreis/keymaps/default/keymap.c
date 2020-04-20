@@ -97,10 +97,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _, _, _, MS_UP, _, _,    _, _, _, _, _, _,
     /* R3 */
     _, _, MS_LEFT, MS_DOWN, MS_RIGHT, _,
-    LEFT, DOWN, UP, RIGHT, _, MEDIA_PLAY_PAUSE,
+    LEFT, DOWN, UP, RIGHT, _, _,
     /* R4 */
     _, _, _, _, _, _,
-    _, _, MEDIA_PREV_TRACK, MEDIA_NEXT_TRACK, _, _,
+    _, AUDIO_VOL_DOWN, AUDIO_VOL_UP, MEDIA_PLAY_PAUSE, MEDIA_NEXT_TRACK, _,
     /* thumbs */
     _, _, _, _,    _, _, _, _
   ),
