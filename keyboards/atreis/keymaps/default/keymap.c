@@ -97,7 +97,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* R1 */
     _, _, _, _, _, _,        _, _, _, _, _, _,
     /* R2 */
-    _, _, _, MS_UP, _, _,    _, _, _, _, _, _,
+    _, _, _, MS_UP, _, _,    END, PGDN, PGUP, HOME, _, _,
     /* R3 */
     _, _, MS_LEFT, MS_DOWN, MS_RIGHT, _,
     LEFT, DOWN, UP, RIGHT, _, _,
