@@ -63,8 +63,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* KC R4 */
     KC_N, KC_M, KC_COMMA, KC_DOT, KC_SLASH, KC_RSFT,
     /* thumbs */
-    FN, KC_LSFT, KC_ENT, KC_TAB,
-    KC_BSPC,KC_SPC,KC_RSFT,KC_ESC
+    FN, KC_TAB, KC_ENT, KC_LSFT,
+    KC_RSFT,KC_BSPC,KC_SPC,KC_ESC
   ),
   [_FN] = LAYOUT_kc(
   //,----+----+----+----+----+----.              ,----+----+----+----+----+----.
