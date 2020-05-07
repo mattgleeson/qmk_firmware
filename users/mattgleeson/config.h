@@ -1,3 +1,8 @@
+#undef TAPPING_TERM
+#define TAPPING_TERM 400
+#undef IGNORE_MOD_TAP_INTERRUPT
+#define IGNORE_MOD_TAP_INTERRUPT 1
+
 #define LAYOUT_wrapper(...) LAYOUT(__VA_ARGS__)
 
 #define KC_GPM_LIKE_SONG C(S(KC_UP))

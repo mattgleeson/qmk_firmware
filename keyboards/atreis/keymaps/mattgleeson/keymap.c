@@ -16,9 +16,6 @@
 #include "atreis.h"
 #include "eeconfig.h"
 
-#define TAPPING_TERM 400
-#define IGNORE_MOD_TAP_INTERRUPT 1
-
 #define _QWERTY 0
 #define _FN 3
 
