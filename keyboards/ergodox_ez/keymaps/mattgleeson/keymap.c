@@ -34,22 +34,14 @@ enum custom_keycodes {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_ergodox_pretty_wrapper(
-    /* LH R1 */
-    KC_EQL, KC_1, KC_2, KC_3, KC_4, KC_5, KC_ESCAPE,
-    /* RH R1 */
-    KC_ENT, KC_6, KC_7, KC_8, KC_9, KC_0, KC_MINUS,
-    /* LH R2 */
-    KC_TAB, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_HOME,
-    /* RH R2 */
-    KC_PGUP, KC_Y, KC_U, KC_I, KC_O, KC_P, KC_BSLASH,
-    /* LH R3 (Home) */
+    MG_LH_R1, KC_ESCAPE,
+    KC_ENT, MG_RH_R1,
+    MG_LH_R2, KC_HOME,
+    KC_PGUP, MG_RH_R2,
     MG_HOME_L,
-    /* RH R3 (Home) */
     MG_HOME_R,
-    /* LH R4 */
-    KC_LSFT, KC_Z, KC_X, KC_C, KC_V, KC_B, KC_END,
-    /* RH R4 */
-    KC_PGDOWN, KC_N, KC_M, KC_COMMA, KC_DOT, KC_SLASH, KC_RSFT,
+    MG_LH_R4, KC_END,
+    KC_PGDOWN, MG_RH_R4,
     /* LH R5 */
     LT(1,KC_GRAVE), KC_QUOTE, KC_LALT, KC_LEFT, KC_LSFT,
     /* RH R5 */
@@ -67,23 +59,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* thumb RH bottom */
     KC_ENTER, KC_BSPACE, KC_SPACE
   ),
-  [1] = LAYOUT_ergodox_pretty(
-    /* LH R1 */
-    KC_ESC, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, _______,
-    /* RH R1 */
-    _______, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11,
-    /* LH R2 */
-    _______, KC_EXLM, KC_AT, KC_LCBR, KC_RCBR, KC_PIPE, _______,
-    /* RH R2 */
-    _______, KC_UP, KC_7, KC_8, KC_9, KC_ASTR, KC_F12,
-    /* LH R3 (Home) */
-    _______, _______, KC_DLR, KC_LPRN, KC_RPRN, KC_GRAVE,
-    /* RH R3 (Home) */
-    KC_DOWN, KC_4, KC_5, KC_6, _______, _______,
-    /* LH R4 */
-    _______, KC_PERCENT, KC_CIRCUMFLEX, KC_LBRACKET, KC_RBRACKET, KC_TILD, _______,
-    /* RH R4 */
-    _______, KC_AMPR, KC_1, KC_2, KC_3, KC_BSLASH, _______,
+  [1] = LAYOUT_ergodox_pretty_wrapper(
+    MG_1_LH_R1, _______,
+    _______, MG_1_RH_R1,
+    MG_1_LH_R2, _______,
+    _______, MG_1_RH_R2,
+    MG_1_LH_R3,
+    MG_1_RH_R3,
+    MG_1_LH_R4, _______,
+    _______, MG_1_RH_R4,
     /* LH R5 */
     _______, _______, _______, _______, _______,
     /* RH R5 */
@@ -93,19 +77,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______, _______,
     _______, _______, _______, _______, _______, _______
   ),
-  [2] = LAYOUT_ergodox_pretty(
-    /* R1 */
-    _______, _______, _______, _______, _______, _______, _______,
-    _______, _______, _______, _______, _______, _______, _______,
-    /* R2 */
-    _______, _______, _______, KC_MS_UP, _______, _______, _______,
-    _______, _______, _______, _______, _______, _______, _______,
-    /* R3 */
-    _______, _______, KC_MS_LEFT, KC_MS_DOWN, KC_MS_RIGHT, _______,
-    KC_LEFT, KC_DOWN, KC_UP, KC_RIGHT, _______, KC_MEDIA_PLAY_PAUSE,
-    /* R4 */
-    _______, _______, _______, _______, _______, _______, _______,
-    _______, _______, _______, KC_MEDIA_PREV_TRACK, KC_MEDIA_NEXT_TRACK, _______, _______,
+  [2] = LAYOUT_ergodox_pretty_wrapper(
+    MG_2_LH_R1, _______,
+    _______, MG_2_RH_R1,
+    MG_2_LH_R2, _______,
+    _______, MG_2_RH_R2,
+    MG_2_LH_R3,
+    MG_2_RH_R3,
+    MG_2_LH_R4, _______,
+    _______, MG_2_RH_R4,
     /* R5 */
     _______, _______, _______, KC_MS_BTN1, KC_MS_BTN2,
     KC_AUDIO_VOL_UP, KC_AUDIO_VOL_DOWN, KC_AUDIO_MUTE, _______, _______,
