@@ -44,26 +44,9 @@ enum custom_keycodes {
 #define KC_R_VI RGB_VAI
 #define KC_R_VD RGB_VAD
 
-#define LAYOUT_wrapper(...) LAYOUT(__VA_ARGS__)
-
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_QWERTY] = LAYOUT_wrapper(
-    /* LH R1 */
-    KC_EQL, KC_1, KC_2, KC_3, KC_4, KC_5,
-    /* RH R1 */
-    KC_6, KC_7, KC_8, KC_9, KC_0, KC_MINUS,
-    /* LH R2 */
-    KC_TAB, KC_Q, KC_W, KC_E, KC_R, KC_T,
-    /* RH R2 */
-    KC_Y, KC_U, KC_I, KC_O, KC_P, KC_BSLASH,
-    /* LH R3 (Home) */
-    MG_HOME_L,
-    /* RH R3 (Home) */
-    MG_HOME_R,
-    /* LH R4 */
-    KC_LSFT, KC_Z, KC_X, KC_C, KC_V, KC_B,
-    /* KC R4 */
-    KC_N, KC_M, KC_COMMA, KC_DOT, KC_SLASH, KC_RSFT,
+    MG_12X4,
     /* thumbs */
     FN, KC_TAB, KC_ENT, KC_LSFT,
     KC_RSFT,KC_BSPC,KC_SPC,KC_ESC
@@ -81,33 +64,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                     ,    ,    ,     ,         ,            ,    ,
   //                  `----+----+----'        `----+----+----'
   ),
-  [1] = LAYOUT_kc(
-    /* R1 */
-    ESC, F1,   F2, F3,   F4,   F5,      F6, F7, F8, F9, F10,  F11,
-    /* R2 */
-    _  , EXLM, AT, LCBR, RCBR, PIPE,    UP, 7,  8,  9,  ASTR, F12,
-    /* R3 (Home) */
-    _, _, DLR, LPRN, RPRN, GRAVE,       DOWN, 4, 5, 6, _, _,
-    /* LH R4 */
-    _, PERCENT, CIRCUMFLEX, LBRACKET, RBRACKET, TILD,
-    /* RH R4 */
-                                        AMPR, 1, 2, 3, BSLASH, _,
+  [1] = LAYOUT_wrapper(
+    MG_1_12X4,
     /* thumbs */
-    _, _, _, _,    _, _, _, _
+    KC_, KC_, KC_, KC_,    KC_, KC_, KC_, KC_
   ),
-  [2] = LAYOUT_kc(
-    /* R1 */
-    _, _, _, _, _, _,        _, _, _, _, _, _,
-    /* R2 */
-    _, _, _, MS_UP, _, _,    END, PGDN, PGUP, HOME, _, _,
-    /* R3 */
-    _, _, MS_LEFT, MS_DOWN, MS_RIGHT, _,
-    LEFT, DOWN, UP, RIGHT, _, _,
-    /* R4 */
-    _, _, _, _, _, _,
-    _, AUDIO_VOL_DOWN, AUDIO_VOL_UP, MEDIA_PLAY_PAUSE, MEDIA_NEXT_TRACK, _,
+  [2] = LAYOUT_wrapper(
+    MG_2_12X4,
     /* thumbs */
-    _, _, _, _,    _, _, _, _
+    KC_, KC_, KC_, KC_,    KC_, KC_, KC_, KC_
   ),
 
 };
