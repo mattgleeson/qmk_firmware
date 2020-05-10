@@ -37,7 +37,7 @@
 
 #define MG_2_RH_R1 _______, _______, _______, _______, _______, _______
 #define MG_2_RH_R2 KC_END, KC_PGDN, KC_PGUP, KC_HOME, _______, _______
-#define MG_2_RH_R3 KC_LEFT, KC_DOWN, KC_UP, KC_RIGHT, _______, _______
+#define MG_2_RH_R3 KC_LEFT, KC_DOWN, KC_UP, KC_RIGHT, KC_BRIGHTNESS_DOWN, KC_BRIGHTNESS_UP
 #define MG_2_RH_R4 _______, KC_AUDIO_VOL_DOWN, KC_AUDIO_VOL_UP, KC_MEDIA_PLAY_PAUSE, KC_MEDIA_NEXT_TRACK, _______
 
 #define MG_12X4 MG_LH_R1, MG_RH_R1, MG_LH_R2, MG_RH_R2, MG_LH_R3, MG_RH_R3, MG_LH_R4, MG_RH_R4
