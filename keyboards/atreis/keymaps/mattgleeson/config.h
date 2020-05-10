@@ -20,5 +20,7 @@
 #include "config_common.h"
 
 // place overrides here
+#define RGB_DI_PIN D5
+#define RGBLED_NUM 16
 
 #endif
