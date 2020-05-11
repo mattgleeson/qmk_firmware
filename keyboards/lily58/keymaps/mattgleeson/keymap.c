@@ -33,28 +33,31 @@ enum custom_keycodes {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
  [_QWERTY] = LAYOUT_wrapper(
-   MG_LH_R1, MG_RH_R1,
-   MG_LH_R2, MG_RH_R2,
-   MG_LH_R3, MG_RH_R3,
-   MG_LH_R4, KC_LBRC,  KC_RBRC, MG_RH_R4,
-   RESET, _______, KC_TAB, KC_ENT,
-                                        KC_BSPC, KC_SPC, KC_ESC, _______
+   MG_LH_R1,                            MG_RH_R1,
+   MG_LH_R2,                            MG_RH_R2,
+   MG_LH_R3,                            MG_RH_R3,
+   MG_LH_R4, KC_ESC,
+   /* */                                KC_ESC, MG_RH_R4,
+   _______, MO(2), KC_TAB, KC_ENT,
+   /* */                                KC_BSPC, KC_SPC, MO(1), _______
 ),
  [1] = LAYOUT_wrapper(
-   MG_1_LH_R1, MG_1_RH_R1,
-   MG_1_LH_R2, MG_1_RH_R2,
-   MG_1_LH_R3, MG_1_RH_R3,
-   MG_1_LH_R4, KC_LBRC,  KC_RBRC, MG_1_RH_R4,
+   MG_1_LH_R1,                          MG_1_RH_R1,
+   MG_1_LH_R2,                          MG_1_RH_R2,
+   MG_1_LH_R3,                          MG_1_RH_R3,
+   MG_1_LH_R4, _______,
+   /* */                                _______, MG_1_RH_R4,
    _______, _______, _______, _______,
-                                        _______, _______, _______, _______
+   /* */                                _______, _______, _______, _______
 ),
  [2] = LAYOUT_wrapper(
-   MG_2_LH_R1, MG_2_RH_R1,
-   MG_2_LH_R2, MG_2_RH_R2,
-   MG_2_LH_R3, MG_2_RH_R3,
-   MG_2_LH_R4, KC_LBRC,  KC_RBRC, MG_2_RH_R4,
+   MG_2_LH_R1,                          MG_2_RH_R1,
+   MG_2_LH_R2,                          MG_2_RH_R2,
+   MG_2_LH_R3,                          MG_2_RH_R3,
+   MG_2_LH_R4, _______,
+   /* */                                _______, MG_2_RH_R4,
    _______, _______, _______, _______,
-                                        _______, _______, _______, _______
+   /* */                                _______, _______, _______, _______
 ),
 /* ADJUST
  * ,-----------------------------------------.                    ,-----------------------------------------.
