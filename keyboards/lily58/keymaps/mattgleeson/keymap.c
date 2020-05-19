@@ -38,8 +38,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    MG_LH_R3,                            MG_RH_R3,
    MG_LH_R4, KC_ESC,
    /* */                                KC_ESC, MG_RH_R4,
-   _______, MO(2), KC_TAB, KC_ENT,
-   /* */                                KC_BSPC, KC_SPC, MO(1), _______
+   _______, MO(2), MG_LTHUMB_NEAR, MG_LTHUMB_FAR,
+   /* */                                MG_RTHUMB_FAR, MG_RTHUMB_NEAR, MO(1), _______
 ),
  [1] = LAYOUT_wrapper(
    MG_1_LH_R1,                          MG_1_RH_R1,
