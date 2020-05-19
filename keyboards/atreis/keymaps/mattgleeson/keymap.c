@@ -15,6 +15,7 @@
  */
 #include "atreis.h"
 #include "eeconfig.h"
+#include "mg_keys.h"
 
 #define _QWERTY 0
 #define _FN 3
@@ -45,8 +46,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_QWERTY] = LAYOUT_wrapper(
     MG_12X4,
     /* thumbs */
-    FN, KC_TAB, KC_ENT, KC_LSFT,
-    KC_RSFT,KC_BSPC,KC_SPC,KC_ESC
+    FN, MG_LTHUMB_NEAR, MG_LTHUMB_FAR, KC_LSFT,
+    KC_RSFT, MG_RTHUMB_FAR, MG_RTHUMB_NEAR, KC_ESC
   ),
   [_FN] = LAYOUT_kc(
   //,----+----+----+----+----+----.              ,----+----+----+----+----+----.

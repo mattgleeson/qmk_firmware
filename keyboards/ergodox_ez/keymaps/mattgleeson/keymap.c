@@ -12,6 +12,8 @@
 #include "keymap_jp.h"
 #include "keymap_bepo.h"
 
+#include "mg_keys.h"
+
 #define KC_MAC_UNDO LGUI(KC_Z)
 #define KC_MAC_CUT LGUI(KC_X)
 #define KC_MAC_COPY LGUI(KC_C)

@@ -8,7 +8,7 @@
   #include "ssd1306.h"
 #endif
 
-
+#include "mg_keys.h"
 
 #ifdef RGBLIGHT_ENABLE
 //Following line allows macro to read current RGB settings
