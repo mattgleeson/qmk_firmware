@@ -39,5 +39,7 @@
 
 #define MG_LTHUMB_NEAR KC_TAB
 #define MG_LTHUMB_FAR KC_ENT
+#define MG_LTHUMB_IN MO(1)
 #define MG_RTHUMB_NEAR KC_SPC
 #define MG_RTHUMB_FAR KC_BSPC
+#define MG_RTHUMB_IN MO(2)
