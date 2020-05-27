@@ -46,7 +46,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_QWERTY] = LAYOUT_wrapper(
     MG_12X4,
     /* thumbs */
-    MG_LTHUMB_IN, MG_LTHUMB_NEAR, MG_LTHUMB_FAR, FN,
+    MG_LTHUMB_IN, MG_LTHUMB_NEAR, MG_LTHUMB_FAR, KC_DEL,
     KC_ESC, MG_RTHUMB_FAR, MG_RTHUMB_NEAR, MG_RTHUMB_IN
   ),
   [_FN] = LAYOUT_kc(
@@ -65,7 +65,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [1] = LAYOUT_wrapper(
     MG_1_12X4,
     /* thumbs */
-    KC_, KC_, KC_, KC_,    KC_, KC_, KC_, KC_
+    KC_, KC_, KC_, KC_,    FN, KC_, KC_, KC_
   ),
   [2] = LAYOUT_wrapper(
     MG_2_12X4,
