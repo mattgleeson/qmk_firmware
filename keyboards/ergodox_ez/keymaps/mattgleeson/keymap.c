@@ -40,8 +40,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_ENT, MG_RH_R1,
     MG_LH_R2, KC_HOME,
     KC_PGUP, MG_RH_R2,
-    MG_HOME_L,
-    MG_HOME_R,
+    MG_LH_R3,
+    MG_RH_R3,
     MG_LH_R4, KC_END,
     KC_PGDOWN, MG_RH_R4,
     /* LH R5 */
