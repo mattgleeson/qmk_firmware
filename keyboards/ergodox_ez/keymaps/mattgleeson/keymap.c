@@ -45,9 +45,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     MG_LH_R4, KC_END,
     KC_PGDOWN, MG_RH_R4,
     /* LH R5 */
-    LT(1,KC_GRAVE), KC_QUOTE, KC_LALT, KC_LEFT, KC_LSFT,
+    LT(1,KC_GRAVE), KC_QUOTE, KC_LALT, KC_LEFT, MG_LTHUMB_IN,
     /* RH R5 */
-    KC_RSFT, KC_DOWN, KC_LBRACKET, KC_RBRACKET, RESET,
+    MG_RTHUMB_IN, KC_DOWN, KC_LBRACKET, KC_RBRACKET, RESET,
     /* thumb LH top */
     KC_AUDIO_VOL_DOWN, KC_AUDIO_VOL_UP,
     /* thumb RH top */
@@ -57,9 +57,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* thumb RH mid */
     KC_GPM_LIKE_SONG,
     /* thumb LH bottom */
-    KC_TAB, KC_ENTER, KC_MAC_SHOW_WINS,
+    MG_LTHUMB_NEAR, MG_LTHUMB_FAR, KC_MAC_SHOW_WINS,
     /* thumb RH bottom */
-    KC_ENTER, KC_BSPACE, KC_SPACE
+    KC_ENTER, MG_RTHUMB_FAR, MG_RTHUMB_NEAR
   ),
   [1] = LAYOUT_ergodox_pretty_wrapper(
     MG_1_LH_R1, _______,
