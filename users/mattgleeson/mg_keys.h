@@ -24,7 +24,7 @@
 #define MG_1_ALH_R3 _______, KC_DLR,  KC_LPRN, KC_RPRN, KC_GRAVE
 #define MG_1_ALH_R4 KC_PERC, KC_CIRC, KC_LBRC, KC_RBRC, KC_TILD
 
-#define MG_1_ARH_R2 KC_UP,   KC_7,    KC_8,    KC_9,    KC_ASTR
+#define MG_1_ARH_R2 KC_UP,   KC_7,    KC_8,    KC_9,    KC_0
 #define MG_1_ARH_R3 KC_DOWN, KC_4,    KC_5,    KC_6,    _______
 #define MG_1_ARH_R4 RESET,   KC_1,    KC_2,    KC_3,    KC_BSLASH
 
