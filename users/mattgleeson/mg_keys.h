@@ -29,9 +29,9 @@
 #define MG_1_ARH_R4 RESET,   KC_1,    KC_2,    KC_3,    KC_BSLASH
 
 /* LAYER 2 */
-#define MG_2_ALH_R2 _______, _______, KC_MS_U, _______, _______
+#define MG_2_ALH_R2 KC_DEL,  _______, KC_MS_U, _______, _______
 #define MG_2_ALH_R3 _______, KC_MS_L, KC_MS_D, KC_MS_R, _______
-#define MG_2_ALH_R4 _______, _______, _______, _______, RESET
+#define MG_2_ALH_R4 KC_ESC,  _______, _______, _______, RESET
 
 #define MG_2_ARH_R2 KC_END,  KC_PGDN, KC_PGUP, KC_HOME, _______
 #define MG_2_ARH_R3 KC_LEFT, KC_DOWN, KC_UP,   KC_RIGHT, KC_BRIGHTNESS_DOWN
