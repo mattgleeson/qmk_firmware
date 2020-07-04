@@ -1,3 +1,20 @@
+#define KC_ KC_TRNS
+#define KC__ KC_TRNS
+#define _______ KC_TRNS
+
+#define KC_FN FN
+#define KC_RST RESET
+#define KC_BL_S BL_STEP
+#define KC_BL_T BL_TOGG
+#define KC_R_TG RGB_TOG
+#define KC_R_MO RGB_MOD
+#define KC_R_HI RGB_HUI
+#define KC_R_HD RGB_HUD
+#define KC_R_SI RGB_SAI
+#define KC_R_SD RGB_SAD
+#define KC_R_VI RGB_VAI
+#define KC_R_VD RGB_VAD
+
 #define KC_GPM_LIKE_SONG C(S(KC_UP))
 #define KC_MAC_SHOW_WINS LCTL(KC_UP)
 
