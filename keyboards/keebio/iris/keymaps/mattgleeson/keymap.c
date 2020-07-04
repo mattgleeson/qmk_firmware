@@ -15,10 +15,10 @@ enum custom_keycodes {
 #include "mg_keys.h"
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-[0] = LAYOUT_wrapper(
+  [0] = LAYOUT_wrapper(
     MG_LH_R1, MG_RH_R1, MG_LH_R2, MG_RH_R2, MG_LH_R3, MG_RH_R3,
-    MG_LH_R4, KC_DEL,
-    KC_ESC, MG_RH_R4,
+    MG_LH_R4, KC_ESC,
+    KC_MEDIA_PLAY_PAUSE, MG_RH_R4,
     /* thumbs */
     MG_LTHUMB_IN, MG_LTHUMB_NEAR, MG_LTHUMB_FAR,
     MG_RTHUMB_FAR, MG_RTHUMB_NEAR, MG_RTHUMB_IN
