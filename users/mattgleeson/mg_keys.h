@@ -38,7 +38,7 @@
 
 /* LAYER 1 */
 #define MG_1_ALH_R2 KC_EXLM, KC_AT,   KC_LCBR, KC_RCBR, KC_PIPE
-#define MG_1_ALH_R3 MG_HOMIFY_L( _______, KC_DLR,  KC_LPRN, KC_RPRN, KC_GRAVE)
+#define MG_1_ALH_R3 _______, LGUI_T(KC_DLR),  KC_LPRN, KC_RPRN, KC_GRAVE
 #define MG_1_ALH_R4 KC_PERC, KC_CIRC, KC_LBRC, KC_RBRC, KC_TILD
 
 #define MG_1_ARH_R2 KC_UP,   KC_7,    KC_8,    KC_9,    KC_0
@@ -47,7 +47,7 @@
 
 /* LAYER 2 */
 #define MG_2_ALH_R2 KC_DEL,  _______, KC_MS_U, _______, _______
-#define MG_2_ALH_R3 MG_HOMIFY_L(_______, KC_MS_L, KC_MS_D, KC_MS_R, _______)
+#define MG_2_ALH_R3 _______, KC_MS_L, KC_MS_D, KC_MS_R, _______
 #define MG_2_ALH_R4 KC_ESC,  _______, _______, _______, RESET
 
 #define MG_2_ARH_R2 KC_END,  KC_PGDN, KC_PGUP, KC_HOME, _______
